@@ -1,6 +1,7 @@
 alert('Activate the browser ´s JavaScript console, to see the numbers');
+var value = '';
 function functionMultiple(n) {  
-    let value = '' + n;
+     value = n;
     const linio = 'Linio';
     const linianos = 'Linianos';
     const it = 'IT'
@@ -36,5 +37,9 @@ function functionMultiple(n) {
             console.log(value);
             break;
     }    
-    console.log(functionMultiple(n - 1));
+    console.log(functionMultiple(n - 1));   
 }
+ QUnit.test( "test", function( assert ) {
+    assert.equal(value,'1','Passed');
+    assert.ok( "" == "", "Passed!" ); 
+ });
